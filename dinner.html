@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+ 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+   <head> 
+      <title>The Dinner Matrix</title> 
+      <link rel="stylesheet" type="text/css" href="styles.css" /> 
+      <script type="text/javascript"> 
+         var lastRow;
+         var lastCol = -1;
+         var lastColor;
+ 
+         function makeLunch() {
+            // Generate the row and column indices
+            var row = Math.round(Math.random() * 16 + 0.5);
+            var col = Math.round(Math.random() * 16 + 0.5);
+ 
+            // Get the table
+            var table = document.getElementById("lunchMatrix");
+ 
+            // Find a nonempty cell
+            var cell;
+            var done = false;
+            do {
+               cell = table.rows[row].cells[col];
+               if(cell.innerHTML == "") {
+                  col -= 1;
+               } else {
+                  done = true;
+               }
+            } while(!done);
+ 
+            // Restore the background of the last suggestion
+            if(lastRow > 0) {
+               table.rows[lastRow].cells[lastCol].style.backgroundColor = lastColor;
+            }
+            lastRow = row;
+            lastCol = col;
+            lastColor = cell.style.backgroundColor;
+            cell.style.backgroundColor = "yellow";
+ 
+		rowtype = table.rows[row].cells[0].innerHTML;
+		
+		choice=confirm("Today you are eating a " + rowtype + " Dinner at " + cell.innerHTML)
+		if(choice!=1)
+		{ makeLunch(); }
+		
+         }
+      </script> 
+   </head> 
+   <body>
+<h1>The Dinner Matrix</h1>
+<table id="lunchMatrix">
+<thead>
+<tr id="tableHeader"><th>Food Type</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th>13</th><th>14</th><th>15</th><th>16</th></tr>
+</thead>
+<tbody>
+<tr id="Mexican">
+<td class="foodType">Mexican</td>
+<td id="r00c00">El Toro</td>
+<td id="r00c01"></td>
+<td id="r00c02">Elsa's</td>
+<td id="r00c03"></td>
+<td id="r00c04">Chipolte</td>
+<td id="r00c05"></td>
+<td id="r00c06">Qdoba</td>
+<td id="r00c07"></td>
+<td id="r00c08">Hot Head</td>
+<td id="r00c09"></td>
+<td id="r00c10">El Rancho Grande</td>
+<td id="r00c11"></td>
+<td id="r00c12">Las Piramides</td>
+<td id="r00c13"></td>
+<td id="r00c14">La Pinata</td>
+<td id="r00c15">Chuy's</td>
+</tr>
+<tr id="Cheeseburger">
+<td class="foodType">Cheeseburger</td>
+<td id="r01c00">Five Guys</td>
+<td id="r01c01"></td>
+<td id="r01c02"></td>
+<td id="r01c03">Smashburger</td>
+<td id="r01c04"></td>
+<td id="r01c05">EO Burger</td>
+<td id="r01c06"></td>
+<td id="r01c07">Steak and Shake</td>
+<td id="r01c08"></td>
+<td id="r01c09">Doubleday</td>
+<td id="r01c10"></td>
+<td id="r01c11">Sea Jax</td>
+<td id="r01c12"></td>
+<td id="r01c13">BW3's</td>
+<td id="r01c14"></td>
+<td id="r01c15">Sweeney's</td>
+</tr>
+<tr id="SubSandwich">
+<td class="foodType">Sub Sandwich</td>
+<td id="r02c00">Penn Station</td>
+<td id="r02c01"></td>
+<td id="r02c02">Jersey Mike's</td>
+<td id="r02c03"></td>
+<td id="r02c04"></td>
+<td id="r02c05">Schlotzsky's</td>
+<td id="r02c06"></td>
+<td id="r02c07">Potbelly</td>
+<td id="r02c08"></td>
+<td id="r02c09">Tropical Smoothie</td>
+<td id="r02c10"></td>
+<td id="r02c11">Italian Oven</td>
+<td id="r02c12">Subway</td>
+<td id="r02c13">Jimmy John's</td>
+<td id="r02c14"></td>
+<td id="r02c15">Firehouse</td>
+</tr>
+<tr id="Italian">
+<td class="foodType">Italian</td>
+<td id="r03c00">La Rosa's</td>
+<td id="r03c01"></td>
+<td id="r03c02">Piada</td>
+<td id="r03c03">Fazolli's</td>
+<td id="r03c04">Carrabas</td>
+<td id="r03c05"></td>
+<td id="r03c06">Olive Garden</td>
+<td id="r03c07"></td>
+<td id="r03c08">Brio</td>
+<td id="r03c09"></td>
+<td id="r03c10">Bravo</td>
+<td id="r03c11"></td>
+<td id="r03c12">Italian Oven</td>
+<td id="r03c13">Mama DiSalvo's</td>
+<td id="r03c14"></td>
+<td id="r03c15"></td>
+</tr>
+<tr id="Pizza">
+<td class="foodType">Pizza</td>
+<td id="r04c00">Papa John's</td>
+<td id="r04c01">Donatos</td>
+<td id="r04c02">Pies and Pints</td>
+<td id="r04c03">Dominos</td>
+<td id="r04c04">La Rosa's</td>
+<td id="r04c05">Marcos</td>
+<td id="r04c06">Monster Pizza</td>
+<td id="r04c07">Marion's</td>
+<td id="r04c08">Papa Murphy's</td>
+<td id="r04c09">Pizza Hut</td>
+<td id="r04c10">Godfather's</td>
+<td id="r04c11">Cassano's</td>
+<td id="r04c12">Figlio</td>
+<td id="r04c13">Pour Haus</td>
+<td id="r04c14">Kramer's</td>
+<td id="r04c15">Dewey's</td>
+</tr>
+<tr id="FastFood">
+<td class="foodType">Fast Food</td>
+<td id="r05c00">Wendy's</td>
+<td id="r05c01"></td>
+<td id="r05c02">McDonalds</td>
+<td id="r05c03"></td>
+<td id="r05c04">Burger King</td>
+<td id="r05c05">Steak and Shake</td>
+<td id="r05c06">Taco Bell</td>
+<td id="r05c07">Arby's</td>
+<td id="r05c08"></td>
+<td id="r05c09">KFC</td>
+<td id="r05c10">A and W</td>
+<td id="r05c11">Chick-fil-A</td>
+<td id="r05c12"></td>
+<td id="r05c13">Lee's Chicken</td>
+<td id="r05c14"></td>
+<td id="r05c15">Hardee's</td>
+</tr>
+<tr id="Dirty">
+<td class="foodType">Dirty</td>
+<td id="r06c00">Skyline</td>
+<td id="r06c01">Elsa's</td>
+<td id="r06c02">BBQ Hut</td>
+<td id="r06c03">Pepitos</td>
+<td id="r06c04">Frickers</td>
+<td id="r06c05">McGilicuty's</td>
+<td id="r06c06">McIntosh's</td>
+<td id="r06c07">Golden Corral</td>
+<td id="r06c08">MacDigger's</td>
+<td id="r06c09">Dairy Queen</td>
+<td id="r06c10">Long John Silver</td>
+<td id="r06c11">Waffle House</td>
+<td id="r06c12">Chuck-E-Cheese</td>
+<td id="r06c13"></td>
+<td id="r06c14">Soft Rock Cafe</td>
+<td id="r06c15">Cousin Vinny's</td>
+</tr>
+<tr id="BarFood">
+<td class="foodType">Bar Food</td>
+<td id="r07c00">Harrigans</td>
+<td id="r07c01"></td>
+<td id="r07c02">Roosters</td>
+<td id="r07c03"></td>
+<td id="r07c04">Ollie's Place</td>
+<td id="r07c05">Wing's and Rings</td>
+<td id="r07c06"></td>
+<td id="r07c07">Bargos</td>
+<td id="r07c08"></td>
+<td id="r07c09">Romers</td>
+<td id="r07c10">Pour Haus</td>
+<td id="r07c11">Frickers</td>
+<td id="r07c12">Irish Pub</td>
+<td id="r07c13">Chappy's</td>
+<td id="r07c14"></td>
+<td id="r07c15">Bar Louie</td>
+</tr>
+<tr id="American">
+<td class="foodType">American</td>
+<td id="r08c00">City BBQ</td>
+<td id="r08c01"></td>
+<td id="r08c02">Tropical Smoothie</td>
+<td id="r08c03">Panaera</td>
+<td id="r08c04">Crazy Mango</td>
+<td id="r08c05">Christophers</td>
+<td id="r08c06">Golden Corral</td>
+<td id="r08c07">Archer's</td>
+<td id="r08c08">Lock 27</td>
+<td id="r08c09">Geez</td>
+<td id="r08c10">Rusty Bucket</td>
+<td id="r08c11">Zeetland Street</td>
+<td id="r08c12">Sea Jax</td>
+<td id="r08c13"></td>
+<td id="r08c14">Potbelly</td>
+<td id="r08c15">Noodles and Co.</td>
+</tr>
+<tr id="SitDown">
+<td class="foodType">Sit Down</td>
+<td id="r09c00">Doubleday</td>
+<td id="r09c01">Applebees</td>
+<td id="r09c02">Bob Evans</td>
+<td id="r09c03">Cracker Barrel</td>
+<td id="r09c04">TGIF</td>
+<td id="r09c05">Big Boy</td>
+<td id="r09c06">Outback</td>
+<td id="r09c07">O'Charley</td>
+<td id="r09c08">Sweeney's</td>
+<td id="r09c09">Ruby Tuesdays</td>
+<td id="r09c10">Chili's</td>
+<td id="r09c11">Perkins</td>
+<td id="r09c12">Lone Star</td>
+<td id="r09c13">El Mason</td>
+<td id="r09c14">Cheesecake Factory</td>
+<td id="r09c15">Mimi's Cafe</td>
+</tr>
+<tr id="Fancy">
+<td class="foodType">Fancy</td>
+<td id="r10c00">Paragon Club</td>
+<td id="r10c01"></td>
+<td id="r10c02">China Cottage</td>
+<td id="r10c03">Bravo</td>
+<td id="r10c04">BJ's Brewhouse</td>
+<td id="r10c05">Rue Dumaine</td>
+<td id="r10c06">J Alexander</td>
+<td id="r10c07">Carvers</td>
+<td id="r10c08">Meadowlark</td>
+<td id="r10c09">Bonefish Grille</td>
+<td id="r10c10">Brio</td>
+<td id="r10c11">McCormick</td>
+<td id="r10c12">Oakwood Club</td>
+<td id="r10c13">The Pub</td>
+<td id="r10c14">Fleming's</td>
+<td id="r10c15">Hawthorne Grill</td>
+</tr>
+<tr id="Asian">
+<td class="foodType">Asian</td>
+<td id="r11c00">China Cottage</td>
+<td id="r11c01">Mongolian BBQ</td>
+<td id="r11c02">China Garden</td>
+<td id="r11c03">China Wok</td>
+<td id="r11c04">Panda Garden</td>
+<td id="r11c05">PF Chang's</td>
+<td id="r11c06">Kabuki</td>
+<td id="r11c07">Choe's</td>
+<td id="r11c08">Golden Dragon</td>
+<td id="r11c09">Tik's Thai</td>
+<td id="r11c10">Sake</td>
+<td id="r11c11">Amar India</td>
+<td id="r11c12">Sima</td>
+<td id="r11c13">Pasha</td>
+<td id="r11c14">China House</td>
+<td id="r11c15">Bahn Mai</td>
+</tr>
+<tr id="Breakfast">
+<td class="foodType">Breakfast</td>
+<td id="r12c00">Panera</td>
+<td id="r12c01"></td>
+<td id="r12c02">Cracker Barrel</td>
+<td id="r12c03"></td>
+<td id="r12c04">Bob Evans</td>
+<td id="r12c05"></td>
+<td id="r12c06">Blueberry Cafe</td>
+<td id="r12c07"></td>
+<td id="r12c08">First Watch</td>
+<td id="r12c09"></td>
+<td id="r12c10">Tim Horton's</td>
+<td id="r12c11">Steak and Shake</td>
+<td id="r12c12">MyFavorite Muffin</td>
+<td id="r12c13">Pancake House</td>
+<td id="r12c14">Bill's Donuts</td>
+<td id="r12c15">Scrambler</td>
+</tr>
+<tr id="Take Out">
+<td class="foodType">Take Out</td>
+<td id="r13c00">Applebees</td>
+<td id="r13c01">Thai Garden</td>
+<td id="r13c02">Doubleday</td>
+<td id="r13c03"></td>
+<td id="r13c04">BW3s</td>
+<td id="r13c05"></td>
+<td id="r13c06">El Toro</td>
+<td id="r13c07">Panera</td>
+<td id="r13c08">Dorothy Lane</td>
+<td id="r13c09">Honeybaked Ham</td>
+<td id="r13c10">City BBQ</td>
+<td id="r13c11"></td>
+<td id="r13c12">China Wok</td>
+<td id="r13c13">China Cottage</td>
+<td id="r13c14">LaRossa's</td>
+<td id="r13c15">Earth Fare</td>
+</tr>
+<tr id="FavoriteCasual">
+<td class="foodType">Favorite Casual</td>
+<td id="r14c00">Doubleday</td>
+<td id="r14c01"></td>
+<td id="r14c02">BW3s</td>
+<td id="r14c03"></td>
+<td id="r14c04">El Toro</td>
+<td id="r14c05"></td>
+<td id="r14c06">Jersey Mike's</td>
+<td id="r14c07"></td>
+<td id="r14c08">City BBQ</td>
+<td id="r14c09"></td>
+<td id="r14c10">Donatos</td>
+<td id="r14c11"></td>
+<td id="r14c12">Chipotle</td>
+<td id="r14c13"></td>
+<td id="r14c14">Chick-fil-A</td>
+<td id="r14c15"></td>
+</tr>
+<tr id="FavoriteNice">
+<td class="foodType">Favorite Nice</td>
+<td id="r15c00">Pine Club</td>
+<td id="r15c01"></td>
+<td id="r15c02">Brio</td>
+<td id="r15c03"></td>
+<td id="r15c04">Sea Jax</td>
+<td id="r15c05"></td>
+<td id="r15c06">China Cottage</td>
+<td id="r15c07"></td>
+<td id="r15c08">McCormick</td>
+<td id="r15c09"></td>
+<td id="r15c10">Paragon Club</td>
+<td id="r15c11"></td>
+<td id="r15c12">Carvers</td>
+<td id="r15c13"></td>
+<td id="r15c14">Bravo</td>
+<td id="r15c15"></td>
+</tr>
+</tbody>
+</table>
+<p><button onclick="makeLunch()">Make Dinner</button></p>
+<p></p>
+<p align="right"><a href="/index.html">Lunch</a></p>
+</body> 
+</html>

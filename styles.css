@@ -1,0 +1,50 @@
+#lunchMatrix {
+   border-collapse: collapse;
+}
+
+#tableHeader {
+   background: silver;
+}
+
+th, td {
+   border: 1px solid black;
+   text-align: center;
+}
+
+.foodType {
+   background: #FFFF80;
+   font-weight: bold;
+   text-align: left;
+}
+
+#burrito {
+   background: #00CCFF;
+}
+
+#dirty {
+   background: red;
+}
+
+#fancy {
+   background: lime;
+}
+
+#favorite {
+   background: #FFFF80;
+}
+
+#Mexican {
+   background: #33FF99;
+}
+
+#FastFood {
+   background: #FF3333;
+}
+
+#Fancy {
+   background: #66CC33;
+}
+
+#FavoriteNice {
+   background: #9933CC;
+}
