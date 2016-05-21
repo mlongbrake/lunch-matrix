@@ -1,2 +1,2 @@
-# lunch-matrix
-Website to recommend places to eat
+# The Lunch Matrix
+Simple website to suggest places to eat lunch in the Dayton area.
