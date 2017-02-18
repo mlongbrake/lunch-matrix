@@ -1,0 +1,21 @@
+<! DOCTYPE html>
+<html>
+  <head>
+    <title>The Lunch Matrix</title>
+  </head>
+  <body>
+    <h1>The Lunch Matrix</h1>
+    <ul>
+      {% for category in Categories %}
+      <li>
+        <h2>{{ category }}</h2>
+        <ul>
+          {% for restaurant in lists[category] %}
+          <li>{{ restaurant }}</li>
+          {% endfor %}
+        </ul>
+      </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>

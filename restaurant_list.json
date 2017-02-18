@@ -1,0 +1,64 @@
+{
+  "Categories": [
+    "Burrito",
+    "Cheeseburger",
+    "Italian",
+    "Sit Down",
+    "Fast Food",
+    "Dirty",
+    "Sub Sandwich",
+    "Pizza",
+    "Bar Food",
+    "Mexican",
+    "American",
+    "Fancy",
+    "Buffet",
+    "Asian",
+    "Greek / Seafood",
+    "Favorite"
+  ],
+  "Restaurants": [
+    {
+      "name": "Qdoba",
+      "categories": [
+        "Burrito"
+      ]
+    },
+    {
+      "name": "Chipotle",
+      "categories": [
+        "Burrito"
+      ]
+    },
+    {
+      "name": "Taco Loco",
+      "categories": [
+        "Burrito",
+        "Dirty",
+        "Mexican"
+      ]
+    },
+    {
+      "name": "Hot Head",
+      "categories": [
+        "Burrito"
+      ]
+    },
+    {
+      "name": "Chuy's",
+      "categories": [
+        "Burrito",
+        "Mexican"
+      ]
+    },
+    {
+      "name": "Piada",
+      "categories": [
+        "Burrito",
+        "Italian",
+        "Greek / Seafood",
+        "Favorite"
+      ]
+    }
+  ]
+}
