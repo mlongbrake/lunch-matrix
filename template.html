@@ -2,14 +2,17 @@
 <html>
   <head>
     <title>The Lunch Matrix</title>
+    <link rel="stylesheet" type="text/css" href="mobile.css">
   </head>
   <body>
-    <h1>The Lunch Matrix</h1>
-    <ul>
+    <div id="header">
+      <h1>The Lunch Matrix</h1>
+    </div>
+    <ul class="category_list">
       {% for category in categories %}
       <li>
         <h2>{{ category }}</h2>
-        <ul>
+        <ul class="restaurant_list">
           {% for restaurant in lists[category] %}
           <li>{{ restaurant }}</li>
           {% endfor %}
@@ -17,5 +20,6 @@
       </li>
       {% endfor %}
     </ul>
+    <button type="button" id="btn_lunch">Make Lunch</button>
   </body>
 </html>
