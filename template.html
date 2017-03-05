@@ -1,26 +1,46 @@
 <! DOCTYPE html>
-<html>
+<html class="mdc-typography">
   <head>
-    <title>The Lunch Matrix</title>
-    <link rel="stylesheet" type="text/css" href="mobile.css">
+    <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#689F38">
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500" type="text/css">
+    <link rel="stylesheet" href="mobile.css" type="text/css">
+    <script src="https://use.fontawesome.com/6ff25b1cb6.js"></script>
+    <title>The Lunch Matrix</title>
   </head>
   <body>
-    <div id="header">
-      <h1>The Lunch Matrix</h1>
-    </div>
-    <ul class="category_list">
+    <header class="mdc-toolbar mdc-toolbar--fixed">
+      <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+        <span class="mdc-toolbar__title">The Lunch Matrix</span>
+      </section>
+    </header>
+    <main class="mdc-layout-grid mdc-toolbar__fixed-adjust restaurant-grid">
       {% for category in categories %}
-      <li>
-        <h2>{{ category }}</h2>
-        <ul class="restaurant_list">
-          {% for restaurant in lists[category] %}
-          <li>{{ restaurant }}</li>
-          {% endfor %}
-        </ul>
-      </li>
+      <div class="mdc-card mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop">
+        <section class="mdc-card__primary">
+          <h1 class="mdc-card__title mdc-card__title--large">
+            {{ category }}
+          </h1>
+        </section>
+        <section><!-- spacer --></section>
+        <section class="mdc-card__supporting-text">
+          <ul class="restaurant-list">
+            {% for restaurant in lists[category] %}
+            <li>
+              {{ restaurant }}
+            </li>
+            {% endfor %}
+          </ul>
+        </section>
+      </div>
       {% endfor %}
-    </ul>
-    <button type="button" id="btn_lunch">Make Lunch</button>
+    </main>
+    <footer>
+      <button class="mdc-fab app-fab--fixed" aria-label="Make Lunch">
+        <i class="fa fa-cutlery" aria-hidden="true"></i>
+      </button>
+    </footer>
   </body>
 </html>

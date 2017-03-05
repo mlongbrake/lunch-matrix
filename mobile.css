@@ -1,43 +1,35 @@
-body {
+.app-fab--fixed {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+@media screen and (min-width:600px) {
+  .app-fab--fixed {
+    bottom: 3em;
+    right: 5em;
+  }
+}
+
+.restaurant-grid {
+  max-width: 1024px;
+}
+
+.restaurant-list {
   margin: 0;
-  padding: 50px 0 30px 0;
-}
-
-div#header {
-  position: fixed;
-  width: 100%;
-  height: 50px;
-  top: 0;
-  left: 0;
-  background-color: lightgrey;
-}
-
-div#header h1 {
-  margin: 0 4px;
-  line-height: 50px;
-}
-
-button#btn_lunch {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 30px;
-  border: solid 1px;
-  font-size: 1.2em;
-}
-
-ul.category_list {
-  list-style-type: none;
   padding: 0;
-  text-align: center
-}
-
-ul.category_list h2 {
-  margin: 1em 0 0 0;
-}
-
-ul.restaurant_list {
   list-style-type: none;
-  padding: 0;
+}
+
+.mdc-card {
+  justify-content: flex-start;
+}
+
+.mdc-card__primary {
+  background-color: #DCEDC8;
+}
+
+:root {
+  --mdc-theme-primary: #8BC34A;
+  --mdc-theme-accent: #FF5252;
 }
