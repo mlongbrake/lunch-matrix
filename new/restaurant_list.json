@@ -1,816 +1,796 @@
-{
-  "Categories": [
-    "Burrito",
-    "Cheeseburger",
-    "Italian",
-    "Sit Down",
-    "Fast Food",
-    "Dirty",
-    "Sub Sandwich",
-    "Pizza",
-    "Bar Food",
-    "Mexican",
-    "American",
-    "Fancy",
-    "Buffet",
-    "Asian",
-    "Greek / Seafood",
-    "Favorite"
-  ],
-  "Restaurants": [
-    {
-      "name": "Qdoba",
-      "categories": [
-        "Burrito"
-      ]
-    },
-    {
-      "name": "Chipotle",
-      "categories": [
-        "Burrito"
-      ]
-    },
-    {
-      "name": "Taco Loco",
-      "categories": [
-        "Burrito",
-        "Dirty",
-        "Mexican"
-      ]
-    },
-    {
-      "name": "Hot Head",
-      "categories": [
-        "Burrito"
-      ]
-    },
-    {
-      "name": "Chuy's",
-      "categories": [
-        "Burrito",
-        "Mexican"
-      ]
-    },
-    {
-      "name": "Piada",
-      "categories": [
-        "Burrito",
-        "Italian",
-        "Greek / Seafood",
-        "Favorite"
-      ]
-    },
-    {
-      "name": "Five Guys",
-      "categories": [
-        "Cheeseburger",
-        "Favorite"
-      ]
-    },
-    {
-      "name": "Red Robin",
-      "categories": [
-        "Cheeseburger",
-        "Sit Down"
-      ]
-    },
-    {
-      "name": "Beef O' Brady's",
-      "categories": [
-        "Cheeseburger",
-        "Bar Food"
-      ]
-    },
-    {
-      "name": "Slyder's",
-      "categories": [
-        "Cheeseburger",
-        "Bar Food"
-      ]
-    },
-    {
-      "name": "BW3's",
-      "categories": [
-        "Cheeseburger",
-        "Bar Food",
-        "American"
-      ]
-    },
-    {
-      "name": "W.O. Wright's",
-      "categories": [
-        "Cheeseburger",
-        "Bar Food",
-        "American"
-      ]
-    },
-    {
-      "name": "Wendy's",
-      "categories": [
-        "Cheeseburger",
-        "Fast Food"
-      ]
-    },
-    {
-      "name": "Steak and Shake",
-      "categories": [
-        "Cheeseburger",
-        "Fast Food"
-      ]
-    },
-    {
-      "name": "One Eyed Jack's",
-      "categories": [
-        "Cheeseburger",
-        "Bar Food"
-      ]
-    },
-    {
-      "name": "Cold Beer and Cheeseburgers",
-      "categories": [
-        "Cheeseburger"
-      ]
-    },
-    {
-      "name": "LaRossa's",
-      "categories": [
-        "Italian",
-        "Pizza"
-      ]
-    },
-    {
-      "name": "Olive Garden",
-      "categories": [
-        "Italian",
-        "Sit Down"
-      ]
-    },
-    {
-      "name": "Milano's",
-      "categories": [
-        "Italian",
-        "Sub Sandwich",
-        "Pizza"
-      ]
-    },
-    {
-      "name": "Giovani's",
-      "categories": [
-        "Italian",
-        "Fancy"
-      ]
-    },
-    {
-      "name": "Spinoza's",
-      "categories": [
-        "Italian",
-        "Sit Down",
-        "Pizza"
-      ]
-    },
-    {
-      "name": "Cassano's",
-      "categories": [
-        "Italian",
-        "Pizza"
-      ]
-    },
-    {
-      "name": "Bravo",
-      "categories": [
-        "Italian",
-        "Fancy"
-      ]
-    },
-    {
-      "name": "DiBella's",
-      "categories": [
-        "Italian",
-        "Sub Sandwich",
-        "Favorite"
-      ]
-    },
-    {
-      "name": "Logan's",
-      "categories": [
-        "Sit Down",
-        "American"
-      ]
-    },
-    {
-      "name": "Caddy's",
-      "categories": [
-        "Sit Down",
-        "Bar Food",
-        "Favorite"
-      ]
-    },
-    {
-      "name": "Linh's",
-      "categories": [
-        "Sit Down",
-        "Fancy",
-        "Asian"
-      ]
-    },
-    {
-      "name": "Chili's",
-      "categories": [
-        "Sit Down"
-      ]
-    },
-    {
-      "name": "Fox and Hound",
-      "categories": [
-        "Sit Down",
-        "Fancy"
-      ]
-    },
-    {
-      "name": "Max and Erma's",
-      "categories": [
-        "Sit Down",
-        "Favorite"
-      ]
-    },
-    {
-      "name": "TGI Friday's",
-      "categories": [
-        "Sit Down",
-        "Fancy"
-      ]
-    },
-    {
-      "name": "Elsa's",
-      "categories": [
-        "Sit Down",
-        "Mexican"
-      ]
-    },
-    {
-      "name": "First Watch",
-      "categories": [
-        "Sit Down"
-      ]
-    },
-    {
-      "name": "IHOP",
-      "categories": [
-        "Sit Down",
-        "American"
-      ]
-    },
-    {
-      "name": "El Rancho Grande",
-      "categories": [
-        "Sit Down",
-        "Mexican",
-        "Favorite"
-      ]
-    },
-    {
-      "name": "Primanti Bro's",
-      "categories": [
-        "Sit Down"
-      ]
-    },
-    {
-      "name": "Christopher's",
-      "categories": [
-        "Sit Down",
-        "American",
-        "Fancy"
-      ]
-    },
-    {
-      "name": "Burger King",
-      "categories": [
-        "Fast Food"
-      ]
-    },
-    {
-      "name": "Subway",
-      "categories": [
-        "Fast Food",
-        "Sub Sandwich"
-      ]
-    },
-    {
-      "name": "Chick-fil-A",
-      "categories": [
-        "Fast Food",
-        "Favorite"
-      ]
-    },
-    {
-      "name": "McDonald's",
-      "categories": [
-        "Fast Food"
-      ]
-    },
-    {
-      "name": "Long John Silver's",
-      "categories": [
-        "Fast Food",
-        "Dirty",
-        "Greek / Seafood"
-      ]
-    },
-    {
-      "name": "Taco Bell",
-      "categories": [
-        "Fast Food"
-      ]
-    },
-    {
-      "name": "KFC",
-      "categories": [
-        "Fast Food"
-      ]
-    },
-    {
-      "name": "Arby's",
-      "categories": [
-        "Fast Food"
-      ]
-    },
-    {
-      "name": "Sonic",
-      "categories": [
-        "Fast Food"
-      ]
-    },
-    {
-      "name": "Rally's",
-      "categories": [
-        "Fast Food",
-        "Dirty"
-      ]
-    },
-    {
-      "name": "Hardee's",
-      "categories": [
-        "Dirty"
-      ]
-    },
-    {
-      "name": "Tuty's",
-      "categories": [
-        "Dirty",
-        "Bar Food"
-      ]
-    },
-    {
-      "name": "Waffle House",
-      "categories": [
-        "Dirty"
-      ]
-    },
-    {
-      "name": "Bagel Shop",
-      "categories": [
-        "Dirty"
-      ]
-    },
-    {
-      "name": "Super Subby",
-      "categories": [
-        "Dirty",
-        "Sub Sandwich"
-      ]
-    },
-    {
-      "name": "Fricker's",
-      "categories": [
-        "Dirty",
-        "Bar Food"
-      ]
-    },
-    {
-      "name": "Smokin' Ace's",
-      "categories": [
-        "Dirty",
-        "Bar Food"
-      ]
-    },
-    {
-      "name": "Skyline",
-      "categories": [
-        "Dirty"
-      ]
-    },
-    {
-      "name": "Saya Korean",
-      "categories": [
-        "Dirty"
-      ]
-    },
-    {
-      "name": "Dairy Queen",
-      "categories": [
-        "Dirty"
-      ]
-    },
-    {
-      "name": "Food Court",
-      "categories": [
-        "Dirty"
-      ]
-    },
-    {
-      "name": "Jersey Mike's",
-      "categories": [
-        "Sub Sandwich",
-        "Favorite"
-      ]
-    },
-    {
-      "name": "Jimmy John's",
-      "categories": [
-        "Sub Sandwich"
-      ]
-    },
-    {
-      "name": "Submarine House",
-      "categories": [
-        "Sub Sandwich"
-      ]
-    },
-    {
-      "name": "Penn Station",
-      "categories": [
-        "Sub Sandwich",
-        "Favorite"
-      ]
-    },
-    {
-      "name": "RolyPoly",
-      "categories": [
-        "Sub Sandwich"
-      ]
-    },
-    {
-      "name": "Potbelly's",
-      "categories": [
-        "Sub Sandwich"
-      ]
-    },
-    {
-      "name": "Marion's",
-      "categories": [
-        "Pizza"
-      ]
-    },
-    {
-      "name": "Pizza Hut",
-      "categories": [
-        "Pizza",
-        "Buffet"
-      ]
-    },
-    {
-      "name": "Marco's",
-      "categories": [
-        "Pizza"
-      ]
-    },
-    {
-      "name": "Domino's",
-      "categories": [
-        "Pizza"
-      ]
-    },
-    {
-      "name": "Joe's Pizza",
-      "categories": [
-        "Pizza"
-      ]
-    },
-    {
-      "name": "Jet's",
-      "categories": [
-        "Pizza"
-      ]
-    },
-    {
-      "name": "Rocky's Pizza",
-      "categories": [
-        "Pizza"
-      ]
-    },
-    {
-      "name": "Flying Pizza",
-      "categories": [
-        "Pizza"
-      ]
-    },
-    {
-      "name": "Beavercreek Pizza",
-      "categories": [
-        "Pizza"
-      ]
-    },
-    {
-      "name": "Donato's",
-      "categories": [
-        "Pizza"
-      ]
-    },
-    {
-      "name": "Papa John's",
-      "categories": [
-        "Pizza"
-      ]
-    },
-    {
-      "name": "King's Table",
-      "categories": [
-        "Bar Food"
-      ]
-    },
-    {
-      "name": "Clancy's",
-      "categories": [
-        "Bar Food"
-      ]
-    },
-    {
-      "name": "Ticket's",
-      "categories": [
-        "Bar Food",
-        "Greek / Seafood"
-      ]
-    },
-    {
-      "name": "Salsa's",
-      "categories": [
-        "Mexican",
-        "Buffet"
-      ]
-    },
-    {
-      "name": "Don Pablo's",
-      "categories": [
-        "Mexican"
-      ]
-    },
-    {
-      "name": "Abuelo's",
-      "categories": [
-        "Mexican",
-        "Fancy"
-      ]
-    },
-    {
-      "name": "El Toro",
-      "categories": [
-        "Mexican"
-      ]
-    },
-    {
-      "name": "Taqueria Mixteca",
-      "categories": [
-        "Mexican"
-      ]
-    },
-    {
-      "name": "Big Boy",
-      "categories": [
-        "American"
-      ]
-    },
-    {
-      "name": "City BBQ",
-      "categories": [
-        "American",
-        "Favorite"
-      ]
-    },
-    {
-      "name": "McAlister's Deli",
-      "categories": [
-        "American"
-      ]
-    },
-    {
-      "name": "Old Hickory BBQ",
-      "categories": [
-        "American"
-      ]
-    },
-    {
-      "name": "Tropical Smoothie",
-      "categories": [
-        "American",
-        "Favorite"
-      ]
-    },
-    {
-      "name": "Hilton Salad",
-      "categories": [
-        "American"
-      ]
-    },
-    {
-      "name": "Bob Evan's",
-      "categories": [
-        "American"
-      ]
-    },
-    {
-      "name": "Airway Kitchen",
-      "categories": [
-        "American"
-      ]
-    },
-    {
-      "name": "Panera",
-      "categories": [
-        "American",
-        "Favorite"
-      ]
-    },
-    {
-      "name": "Woody's BBQ",
-      "categories": [
-        "American"
-      ]
-    },
-    {
-      "name": "TJ Chump's",
-      "categories": [
-        "American"
-      ]
-    },
-    {
-      "name": "Longhorn",
-      "categories": [
-        "Fancy"
-      ]
-    },
-    {
-      "name": "BJ's Brewhouse",
-      "categories": [
-        "Fancy"
-      ]
-    },
-    {
-      "name": "Texas Roadhouse",
-      "categories": [
-        "Fancy"
-      ]
-    },
-    {
-      "name": "Mimi's Cafe",
-      "categories": [
-        "Fancy"
-      ]
-    },
-    {
-      "name": "Cherry House Cafe",
-      "categories": [
-        "Fancy"
-      ]
-    },
-    {
-      "name": "Red Lobster",
-      "categories": [
-        "Fancy",
-        "Greek / Seafood"
-      ]
-    },
-    {
-      "name": "Cheesecake Factory",
-      "categories": [
-        "Fancy"
-      ]
-    },
-    {
-      "name": "Golden Corral",
-      "categories": [
-        "Buffet"
-      ]
-    },
-    {
-      "name": "China Garden",
-      "categories": [
-        "Buffet",
-        "Asian"
-      ]
-    },
-    {
-      "name": "Maharaja",
-      "categories": [
-        "Buffet",
-        "Asian"
-      ]
-    },
-    {
-      "name": "Yaffa",
-      "categories": [
-        "Buffet",
-        "Asian"
-      ]
-    },
-    {
-      "name": "Tsao's Cuisine",
-      "categories": [
-        "Buffet",
-        "Asian"
-      ]
-    },
-    {
-      "name": "Kroger Deli",
-      "categories": [
-        "Buffet"
-      ]
-    },
-    {
-      "name": "Fresh Thyme",
-      "categories": [
-        "Buffet"
-      ]
-    },
-    {
-      "name": "Song's Sushi",
-      "categories": [
-        "Asian"
-      ]
-    },
-    {
-      "name": "Laska",
-      "categories": [
-        "Asian"
-      ]
-    },
-    {
-      "name": "Flying Tiger",
-      "categories": [
-        "Asian"
-      ]
-    },
-    {
-      "name": "Tik's Thai",
-      "categories": [
-        "Asian"
-      ]
-    },
-    {
-      "name": "Jeet India",
-      "categories": [
-        "Asian"
-      ]
-    },
-    {
-      "name": "Osaka",
-      "categories": [
-        "Asian"
-      ]
-    },
-    {
-      "name": "China Wok",
-      "categories": [
-        "Asian"
-      ]
-    },
-    {
-      "name": "Pita Wrap",
-      "categories": [
-        "Asian",
-        "Greek / Seafood",
-        "Favorite"
-      ]
-    },
-    {
-      "name": "Kawali",
-      "categories": [
-        "Asian"
-      ]
-    },
-    {
-      "name": "Sima",
-      "categories": [
-        "Asian"
-      ]
-    },
-    {
-      "name": "Akashi Sushi",
-      "categories": [
-        "Asian"
-      ]
-    },
-    {
-      "name": "Greek Isle Deli",
-      "categories": [
-        "Greek / Seafood",
-        "Favorite"
-      ]
-    },
-    {
-      "name": "Gyro Palace",
-      "categories": [
-        "Greek / Seafood"
-      ]
-    }
-  ]
-}
+[
+  {
+    "name": "Qdoba",
+    "categories": [
+      "Burrito"
+    ]
+  },
+  {
+    "name": "Chipotle",
+    "categories": [
+      "Burrito"
+    ]
+  },
+  {
+    "name": "Taco Loco",
+    "categories": [
+      "Burrito",
+      "Dirty",
+      "Mexican"
+    ]
+  },
+  {
+    "name": "Hot Head",
+    "categories": [
+      "Burrito"
+    ]
+  },
+  {
+    "name": "Chuy's",
+    "categories": [
+      "Burrito",
+      "Mexican"
+    ]
+  },
+  {
+    "name": "Piada",
+    "categories": [
+      "Burrito",
+      "Italian",
+      "Greek / Seafood",
+      "Favorite"
+    ]
+  },
+  {
+    "name": "Five Guys",
+    "categories": [
+      "Cheeseburger",
+      "Favorite"
+    ]
+  },
+  {
+    "name": "Red Robin",
+    "categories": [
+      "Cheeseburger",
+      "Sit Down"
+    ]
+  },
+  {
+    "name": "Beef O' Brady's",
+    "categories": [
+      "Cheeseburger",
+      "Bar Food"
+    ]
+  },
+  {
+    "name": "Slyder's",
+    "categories": [
+      "Cheeseburger",
+      "Bar Food"
+    ]
+  },
+  {
+    "name": "BW3's",
+    "categories": [
+      "Cheeseburger",
+      "Bar Food",
+      "American"
+    ]
+  },
+  {
+    "name": "W.O. Wright's",
+    "categories": [
+      "Cheeseburger",
+      "Bar Food",
+      "American"
+    ]
+  },
+  {
+    "name": "Wendy's",
+    "categories": [
+      "Cheeseburger",
+      "Fast Food"
+    ]
+  },
+  {
+    "name": "Steak and Shake",
+    "categories": [
+      "Cheeseburger",
+      "Fast Food"
+    ]
+  },
+  {
+    "name": "One Eyed Jack's",
+    "categories": [
+      "Cheeseburger",
+      "Bar Food"
+    ]
+  },
+  {
+    "name": "Cold Beer and Cheeseburgers",
+    "categories": [
+      "Cheeseburger"
+    ]
+  },
+  {
+    "name": "LaRossa's",
+    "categories": [
+      "Italian",
+      "Pizza"
+    ]
+  },
+  {
+    "name": "Olive Garden",
+    "categories": [
+      "Italian",
+      "Sit Down"
+    ]
+  },
+  {
+    "name": "Milano's",
+    "categories": [
+      "Italian",
+      "Sub Sandwich",
+      "Pizza"
+    ]
+  },
+  {
+    "name": "Giovani's",
+    "categories": [
+      "Italian",
+      "Fancy"
+    ]
+  },
+  {
+    "name": "Spinoza's",
+    "categories": [
+      "Italian",
+      "Sit Down",
+      "Pizza"
+    ]
+  },
+  {
+    "name": "Cassano's",
+    "categories": [
+      "Italian",
+      "Pizza"
+    ]
+  },
+  {
+    "name": "Bravo",
+    "categories": [
+      "Italian",
+      "Fancy"
+    ]
+  },
+  {
+    "name": "DiBella's",
+    "categories": [
+      "Italian",
+      "Sub Sandwich",
+      "Favorite"
+    ]
+  },
+  {
+    "name": "Logan's",
+    "categories": [
+      "Sit Down",
+      "American"
+    ]
+  },
+  {
+    "name": "Caddy's",
+    "categories": [
+      "Sit Down",
+      "Bar Food",
+      "Favorite"
+    ]
+  },
+  {
+    "name": "Linh's",
+    "categories": [
+      "Sit Down",
+      "Fancy",
+      "Asian"
+    ]
+  },
+  {
+    "name": "Chili's",
+    "categories": [
+      "Sit Down"
+    ]
+  },
+  {
+    "name": "Fox and Hound",
+    "categories": [
+      "Sit Down",
+      "Fancy"
+    ]
+  },
+  {
+    "name": "Max and Erma's",
+    "categories": [
+      "Sit Down",
+      "Favorite"
+    ]
+  },
+  {
+    "name": "TGI Friday's",
+    "categories": [
+      "Sit Down",
+      "Fancy"
+    ]
+  },
+  {
+    "name": "Elsa's",
+    "categories": [
+      "Sit Down",
+      "Mexican"
+    ]
+  },
+  {
+    "name": "First Watch",
+    "categories": [
+      "Sit Down"
+    ]
+  },
+  {
+    "name": "IHOP",
+    "categories": [
+      "Sit Down",
+      "American"
+    ]
+  },
+  {
+    "name": "El Rancho Grande",
+    "categories": [
+      "Sit Down",
+      "Mexican",
+      "Favorite"
+    ]
+  },
+  {
+    "name": "Primanti Bro's",
+    "categories": [
+      "Sit Down"
+    ]
+  },
+  {
+    "name": "Christopher's",
+    "categories": [
+      "Sit Down",
+      "American",
+      "Fancy"
+    ]
+  },
+  {
+    "name": "Burger King",
+    "categories": [
+      "Fast Food"
+    ]
+  },
+  {
+    "name": "Subway",
+    "categories": [
+      "Fast Food",
+      "Sub Sandwich"
+    ]
+  },
+  {
+    "name": "Chick-fil-A",
+    "categories": [
+      "Fast Food",
+      "Favorite"
+    ]
+  },
+  {
+    "name": "McDonald's",
+    "categories": [
+      "Fast Food"
+    ]
+  },
+  {
+    "name": "Long John Silver's",
+    "categories": [
+      "Fast Food",
+      "Dirty",
+      "Greek / Seafood"
+    ]
+  },
+  {
+    "name": "Taco Bell",
+    "categories": [
+      "Fast Food"
+    ]
+  },
+  {
+    "name": "KFC",
+    "categories": [
+      "Fast Food"
+    ]
+  },
+  {
+    "name": "Arby's",
+    "categories": [
+      "Fast Food"
+    ]
+  },
+  {
+    "name": "Sonic",
+    "categories": [
+      "Fast Food"
+    ]
+  },
+  {
+    "name": "Rally's",
+    "categories": [
+      "Fast Food",
+      "Dirty"
+    ]
+  },
+  {
+    "name": "Hardee's",
+    "categories": [
+      "Dirty"
+    ]
+  },
+  {
+    "name": "Tuty's",
+    "categories": [
+      "Dirty",
+      "Bar Food"
+    ]
+  },
+  {
+    "name": "Waffle House",
+    "categories": [
+      "Dirty"
+    ]
+  },
+  {
+    "name": "Bagel Shop",
+    "categories": [
+      "Dirty"
+    ]
+  },
+  {
+    "name": "Super Subby",
+    "categories": [
+      "Dirty",
+      "Sub Sandwich"
+    ]
+  },
+  {
+    "name": "Fricker's",
+    "categories": [
+      "Dirty",
+      "Bar Food"
+    ]
+  },
+  {
+    "name": "Smokin' Ace's",
+    "categories": [
+      "Dirty",
+      "Bar Food"
+    ]
+  },
+  {
+    "name": "Skyline",
+    "categories": [
+      "Dirty"
+    ]
+  },
+  {
+    "name": "Saya Korean",
+    "categories": [
+      "Dirty"
+    ]
+  },
+  {
+    "name": "Dairy Queen",
+    "categories": [
+      "Dirty"
+    ]
+  },
+  {
+    "name": "Food Court",
+    "categories": [
+      "Dirty"
+    ]
+  },
+  {
+    "name": "Jersey Mike's",
+    "categories": [
+      "Sub Sandwich",
+      "Favorite"
+    ]
+  },
+  {
+    "name": "Jimmy John's",
+    "categories": [
+      "Sub Sandwich"
+    ]
+  },
+  {
+    "name": "Submarine House",
+    "categories": [
+      "Sub Sandwich"
+    ]
+  },
+  {
+    "name": "Penn Station",
+    "categories": [
+      "Sub Sandwich",
+      "Favorite"
+    ]
+  },
+  {
+    "name": "RolyPoly",
+    "categories": [
+      "Sub Sandwich"
+    ]
+  },
+  {
+    "name": "Potbelly's",
+    "categories": [
+      "Sub Sandwich"
+    ]
+  },
+  {
+    "name": "Marion's",
+    "categories": [
+      "Pizza"
+    ]
+  },
+  {
+    "name": "Pizza Hut",
+    "categories": [
+      "Pizza",
+      "Buffet"
+    ]
+  },
+  {
+    "name": "Marco's",
+    "categories": [
+      "Pizza"
+    ]
+  },
+  {
+    "name": "Domino's",
+    "categories": [
+      "Pizza"
+    ]
+  },
+  {
+    "name": "Joe's Pizza",
+    "categories": [
+      "Pizza"
+    ]
+  },
+  {
+    "name": "Jet's",
+    "categories": [
+      "Pizza"
+    ]
+  },
+  {
+    "name": "Rocky's Pizza",
+    "categories": [
+      "Pizza"
+    ]
+  },
+  {
+    "name": "Flying Pizza",
+    "categories": [
+      "Pizza"
+    ]
+  },
+  {
+    "name": "Beavercreek Pizza",
+    "categories": [
+      "Pizza"
+    ]
+  },
+  {
+    "name": "Donato's",
+    "categories": [
+      "Pizza"
+    ]
+  },
+  {
+    "name": "Papa John's",
+    "categories": [
+      "Pizza"
+    ]
+  },
+  {
+    "name": "King's Table",
+    "categories": [
+      "Bar Food"
+    ]
+  },
+  {
+    "name": "Clancy's",
+    "categories": [
+      "Bar Food"
+    ]
+  },
+  {
+    "name": "Ticket's",
+    "categories": [
+      "Bar Food",
+      "Greek / Seafood"
+    ]
+  },
+  {
+    "name": "Salsa's",
+    "categories": [
+      "Mexican",
+      "Buffet"
+    ]
+  },
+  {
+    "name": "Don Pablo's",
+    "categories": [
+      "Mexican"
+    ]
+  },
+  {
+    "name": "Abuelo's",
+    "categories": [
+      "Mexican",
+      "Fancy"
+    ]
+  },
+  {
+    "name": "El Toro",
+    "categories": [
+      "Mexican"
+    ]
+  },
+  {
+    "name": "Taqueria Mixteca",
+    "categories": [
+      "Mexican"
+    ]
+  },
+  {
+    "name": "Big Boy",
+    "categories": [
+      "American"
+    ]
+  },
+  {
+    "name": "City BBQ",
+    "categories": [
+      "American",
+      "Favorite"
+    ]
+  },
+  {
+    "name": "McAlister's Deli",
+    "categories": [
+      "American"
+    ]
+  },
+  {
+    "name": "Old Hickory BBQ",
+    "categories": [
+      "American"
+    ]
+  },
+  {
+    "name": "Tropical Smoothie",
+    "categories": [
+      "American",
+      "Favorite"
+    ]
+  },
+  {
+    "name": "Hilton Salad",
+    "categories": [
+      "American"
+    ]
+  },
+  {
+    "name": "Bob Evan's",
+    "categories": [
+      "American"
+    ]
+  },
+  {
+    "name": "Airway Kitchen",
+    "categories": [
+      "American"
+    ]
+  },
+  {
+    "name": "Panera",
+    "categories": [
+      "American",
+      "Favorite"
+    ]
+  },
+  {
+    "name": "Woody's BBQ",
+    "categories": [
+      "American"
+    ]
+  },
+  {
+    "name": "TJ Chump's",
+    "categories": [
+      "American"
+    ]
+  },
+  {
+    "name": "Longhorn",
+    "categories": [
+      "Fancy"
+    ]
+  },
+  {
+    "name": "BJ's Brewhouse",
+    "categories": [
+      "Fancy"
+    ]
+  },
+  {
+    "name": "Texas Roadhouse",
+    "categories": [
+      "Fancy"
+    ]
+  },
+  {
+    "name": "Mimi's Cafe",
+    "categories": [
+      "Fancy"
+    ]
+  },
+  {
+    "name": "Cherry House Cafe",
+    "categories": [
+      "Fancy"
+    ]
+  },
+  {
+    "name": "Red Lobster",
+    "categories": [
+      "Fancy",
+      "Greek / Seafood"
+    ]
+  },
+  {
+    "name": "Cheesecake Factory",
+    "categories": [
+      "Fancy"
+    ]
+  },
+  {
+    "name": "Golden Corral",
+    "categories": [
+      "Buffet"
+    ]
+  },
+  {
+    "name": "China Garden",
+    "categories": [
+      "Buffet",
+      "Asian"
+    ]
+  },
+  {
+    "name": "Maharaja",
+    "categories": [
+      "Buffet",
+      "Asian"
+    ]
+  },
+  {
+    "name": "Yaffa",
+    "categories": [
+      "Buffet",
+      "Asian"
+    ]
+  },
+  {
+    "name": "Tsao's Cuisine",
+    "categories": [
+      "Buffet",
+      "Asian"
+    ]
+  },
+  {
+    "name": "Kroger Deli",
+    "categories": [
+      "Buffet"
+    ]
+  },
+  {
+    "name": "Fresh Thyme",
+    "categories": [
+      "Buffet"
+    ]
+  },
+  {
+    "name": "Song's Sushi",
+    "categories": [
+      "Asian"
+    ]
+  },
+  {
+    "name": "Laska",
+    "categories": [
+      "Asian"
+    ]
+  },
+  {
+    "name": "Flying Tiger",
+    "categories": [
+      "Asian"
+    ]
+  },
+  {
+    "name": "Tik's Thai",
+    "categories": [
+      "Asian"
+    ]
+  },
+  {
+    "name": "Jeet India",
+    "categories": [
+      "Asian"
+    ]
+  },
+  {
+    "name": "Osaka",
+    "categories": [
+      "Asian"
+    ]
+  },
+  {
+    "name": "China Wok",
+    "categories": [
+      "Asian"
+    ]
+  },
+  {
+    "name": "Pita Wrap",
+    "categories": [
+      "Asian",
+      "Greek / Seafood",
+      "Favorite"
+    ]
+  },
+  {
+    "name": "Kawali",
+    "categories": [
+      "Asian"
+    ]
+  },
+  {
+    "name": "Sima",
+    "categories": [
+      "Asian"
+    ]
+  },
+  {
+    "name": "Akashi Sushi",
+    "categories": [
+      "Asian"
+    ]
+  },
+  {
+    "name": "Greek Isle Deli",
+    "categories": [
+      "Greek / Seafood",
+      "Favorite"
+    ]
+  },
+  {
+    "name": "Gyro Palace",
+    "categories": [
+      "Greek / Seafood"
+    ]
+  }
+]
